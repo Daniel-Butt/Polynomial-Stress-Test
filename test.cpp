@@ -21,7 +21,7 @@ int main(int argc, char *argv[]){
 
     const int numThreads = std::thread::hardware_concurrency();
 
-    std::cout << "Running on " << numThreads << " threads\n";
+    std::cout << "Running on " << numThreads << " threads (logical processors)\n";
 
     omp_set_num_threads(numThreads); 
 
